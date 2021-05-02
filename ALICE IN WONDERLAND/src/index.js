@@ -12,8 +12,12 @@
 
 //Write a function to return the route to her home
 function find_Route(number){
-    
-    return null;
+    let route;
+    let rem=number%10;
+    number=number/10;
+    route=rem+number;
+    return Math.floor(route);
 }
 
+console.log(find_Route(56));
 //Run SpecRunner.html to check the Test Case.
